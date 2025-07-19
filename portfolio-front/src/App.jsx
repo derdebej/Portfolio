@@ -8,36 +8,44 @@ import {
   VscHome,
   VscArchive,
   VscAccount,
-  VscSettingsGear,
+  VscMortarBoard,
 } from "react-icons/vsc";
-import Photo from "./components/Photo";
-
+import HomeSection from "./components/HomeSection";
 
 function App() {
   return (
     <>
-      <div>
-        <Particles
-          particleColors={["#ffffff", "#ffffff"]}
-          particleCount={1000}
-          particleSpread={20}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={false}
-          alphaParticles={true}
-          disableRotation={false}
-        />
-      </div>
-      <Photo/>
-      
+      <Particles
+        particleColors={["#ffffff", "#ffffff"]}
+        particleCount={1000}
+        particleSpread={20}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={false}
+        alphaParticles={true}
+        disableRotation={false}
+      />
+
+      <section id="Home" className="h-screen text-white">
+        <HomeSection/>
+      </section>
+
+      <section id="About" className="h-screen  text-white">
+        <h1 className="text-6xl">About Me</h1>
+      </section>
+
+      <section id="Projects" className="h-screen  text-white">
+        <h1 className="text-6xl">Projects</h1>
+      </section>
+
       <Dock
         items={[
           { icon: <VscHome size={25} color="white" />, label: "Home" },
           { icon: <VscArchive size={25} color="white" />, label: "Projects" },
           { icon: <VscAccount size={25} color="white" />, label: "About" },
           {
-            icon: <VscSettingsGear size={25} color="white" />,
-            label: "Settings",
+            icon: <VscMortarBoard size={25} color="white" />,
+            label: "Education",
           },
         ]}
         panelHeight={68}

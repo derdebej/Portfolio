@@ -1,3 +1,4 @@
+// @ts-ignore
 import React, { useState } from "react";
 // @ts-ignore
 import avatar from "../assets/ee2115e5-1fa1-4500-9078-5067804191f7.png";

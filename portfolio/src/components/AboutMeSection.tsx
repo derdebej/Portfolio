@@ -1,3 +1,4 @@
+// @ts-ignore
 import React from "react";
 import avatar from "../assets/ee2115e5-1fa1-4500-9078-5067804191f7.png";
 import CopyToClipboard from "./CopyToClipboard";
@@ -9,21 +10,25 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
-import { IoDocumentTextOutline } from "react-icons/io5";
 
 const AboutMeSection = () => {
   return (
     <>
       <div className="flex justify-center items-center h-screen gap-10">
-        <div className="backdrop-blur-sm border-2 rounded-xl h-140 w-100 border-neutral-700 flex  flex-col justify-between items-center p-8">
+        <div className="backdrop-blur-sm border-2 rounded-xl h-170 w-107 border-neutral-700 flex  flex-col justify-between items-center p-8">
           <div className="border-b border-b-neutral-700 pb-5">
             <img
               src={avatar}
               className="rounded-xl w-90 border-neutral-700 border-2"
             />
           </div>
-          <div className="text-4xl text-neutral-300 border-b border-neutral-700 w-full pb-5 text-center">Nader Ben Salah</div>
-          <div className="flex mt-4 items-center w-full justify-between px-5">
+          <div className="text-5xl text-neutral-300 w-full text-left flex flex-col">
+            Nader Ben Salah{" "}
+            <span className="text-2xl text-neutral-400">
+              Software Engineering Student
+            </span>
+          </div>
+          <div className="flex items-center w-full justify-between px-5">
             <CopyToClipboard
               value="+216 94066700"
               icon={<FaPhone size={22} />}
@@ -76,8 +81,16 @@ const AboutMeSection = () => {
             </a>
           </div>
         </div>
-        <div className="backdrop-blur-sm border-2 rounded-xl h-140 w-180 border-neutral-700">
-          ben salah
+        <div className="p-8 backdrop-blur-sm border-2 rounded-xl h-170 w-180 border-neutral-700 text-2xl">
+          <h1 className="font-bold text-5xl pb-6">About Me</h1>
+          I’m a computer engineering student fueled by curiosity and a
+          relentless drive to learn, listen, and bring ideas to life. Whether
+          strategizing on a chessboard, chasing victory on the football field,
+          or immersing myself in gaming, I thrive on challenges that push me to
+          grow. I’m passionate about collaborating with others, soaking up
+          knowledge, and applying it creatively to solve problems. I’m eager to
+          seize opportunities where I can shine, crafting innovative solutions
+          and making a lasting impact through teamwork and dedication.
         </div>
       </div>
     </>

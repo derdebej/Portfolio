@@ -13,7 +13,6 @@ import React, {
   Children,
   cloneElement,
   useEffect,
-  useMemo,
   useRef,
   useState,
 } from "react";
@@ -163,18 +162,12 @@ export default function Dock({
   magnification = 70,
   distance = 200,
   panelHeight = 64,
-  dockHeight = 256,
   baseItemSize = 50,
 }: DockProps) {
   const mouseX = useMotionValue(Infinity);
   const isHovered = useMotionValue(0);
 
-  const maxHeight = useMemo(
-    () => Math.max(dockHeight, magnification + magnification / 2 + 4),
-    [magnification]
-  );
-  const heightRow = useTransform(isHovered, [0, 1], [panelHeight, maxHeight]);
-  const height = useSpring(heightRow, spring);
+  
 
   return (
     <motion.div

@@ -21,6 +21,7 @@ import React, {
 export type DockItemData = {
   icon: React.ReactNode;
   label: React.ReactNode;
+  sectionId?: string; // DOM id to scroll to (falls back to label if omitted)
   onClick?: () => void;
   className?: string;
 };
@@ -194,14 +195,10 @@ export default function Dock({
         <DockItem
           key={index}
           onClick={() => {
-            if (item.label) {
-              const aboutElement = document.getElementById(
-                item.label as string
-              );
-              if (aboutElement) {
-                aboutElement.scrollIntoView({ behavior: "smooth" });
-              }
-            }
+            const targetId = item.sectionId ?? (item.label as string);
+            document
+              .getElementById(targetId)
+              ?.scrollIntoView({ behavior: "smooth" });
           }}
           className={item.className}
           mouseX={mouseX}

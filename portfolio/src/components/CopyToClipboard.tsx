@@ -1,7 +1,13 @@
-import React, {useState} from "react";
+import { useState } from "react";
+import type { ReactNode } from "react";
 
-// @ts-ignore
-const CopyToClipboard = ({ value, icon, copiedText = "Copied!" }) => {
+interface CopyToClipboardProps {
+  value: string;
+  icon: ReactNode;
+  copiedText?: string;
+}
+
+const CopyToClipboard = ({ value, icon, copiedText = "Copied!" }: CopyToClipboardProps) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -14,16 +20,17 @@ const CopyToClipboard = ({ value, icon, copiedText = "Copied!" }) => {
   return (
     <button
       onClick={handleCopy}
-      title={copied ? copiedText : "Copy to clipboard"}
-      className="hover:text-gray-300 transition-all duration-300 cursor-pointer"
+      title={copied ? copiedText : value}
+      className="relative hover:text-gray-300 transition-all duration-300 cursor-pointer"
     >
       {icon}
       {copied && (
-        <span className="absolute mt-2 bg-white p-2 text-xs text-black rounded-lg">
+        <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1 whitespace-nowrap bg-white px-2 py-1 text-xs text-black rounded-lg z-10">
           {copiedText}
         </span>
       )}
     </button>
   );
 };
+
 export default CopyToClipboard;

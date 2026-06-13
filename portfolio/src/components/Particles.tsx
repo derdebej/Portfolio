@@ -238,7 +238,7 @@ const Particles: React.FC<ParticlesProps> = ({
   return (
     <div
       ref={containerRef}
-      className={`fixed w-full h-full ${className}`}
+      className={`fixed w-full h-full ${!moveParticlesOnHover ? "pointer-events-none" : ""} ${className ?? ""}`}
     />
   );
 };

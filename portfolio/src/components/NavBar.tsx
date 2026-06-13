@@ -166,9 +166,6 @@ export default function Dock({
 }: DockProps) {
   const mouseX = useMotionValue(Infinity);
   const isHovered = useMotionValue(0);
-
-  
-
   return (
     <motion.div
       onMouseMove={({ pageX }) => {

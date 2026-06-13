@@ -4,7 +4,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaFacebook,
-  FaInstagram,
   FaPhone,
 } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";

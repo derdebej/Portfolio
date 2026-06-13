@@ -15,7 +15,7 @@ import { t } from "../i18n/translations";
 const HomeSection = () => {
   const { lang } = useLanguage();
   const tr = t[lang].home;
-  const cvFile = lang === "fr" ? "/cv_fr.pdf" : "/cv_en.pdf";
+  const cvFile = lang === "fr" ? "/cv_nader_ben_salah.pdf" : "/cv_nader_ben_salah_eng.pdf";
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row justify-center items-center gap-8 md:gap-25 px-6 py-20 md:py-0">

@@ -10,7 +10,7 @@ export const t = {
     },
     about: {
       label: "About Me",
-      bio: "I'm a computer engineering student at ENSI, passionate about AI, full-stack development, and creating impactful solutions. Beyond code, I'm actively involved in student life as a representative and community leader, always looking to collaborate and grow.",
+      bio: "I’m a computer engineering student at ENSI with a strong passion for AI, full-stack development, and building smart, impactful digital solutions. I enjoy turning ideas into real, usable products that solve actual problems and improve everyday experiences. Always curious and growth-driven, I’m constantly exploring new technologies, collaborating on projects, and pushing my skills beyond the classroom.",
       techStack: "Tech Stack",
       languages: "Languages",
       arabic: "Arabic",
@@ -55,7 +55,7 @@ export const t = {
     },
     about: {
       label: "À Propos",
-      bio: "Étudiant en informatique à l'ENSI, passionné par l'IA, le développement full-stack et la création de solutions à fort impact. Au-delà du code, je m'implique activement dans la vie étudiante en tant que représentant des étudiants et leader associatif.",
+      bio: "Je suis étudiant en génie informatique à l’ENSI, passionné par l’intelligence artificielle, le développement full-stack et la création de solutions digitales innovantes à fort impact. J’aime transformer des idées en produits concrets qui répondent à de vrais besoins et améliorent le quotidien. Curieux et motivé par l’apprentissage continu, j’explore constamment de nouvelles technologies et je m’investis dans des projets collaboratifs pour faire évoluer mes compétences au-delà du cadre académique.",
       techStack: "Compétences techniques",
       languages: "Langues",
       arabic: "Arabe",

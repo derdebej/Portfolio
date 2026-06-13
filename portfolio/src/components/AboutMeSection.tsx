@@ -5,7 +5,6 @@ import {
   FaPhone,
   FaGithub,
   FaLinkedin,
-  FaInstagram,
   FaFacebook,
 } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
@@ -91,9 +90,6 @@ export default function AboutMeSection() {
             </a>
             <a href="https://www.facebook.com/nader.ben.salah.1312" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={19} className="hover:text-neutral-300 transition-colors duration-200" />
-            </a>
-            <a href="https://www.instagram.com/nader__bs/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram size={19} className="hover:text-neutral-300 transition-colors duration-200" />
             </a>
           </div>
         </motion.div>

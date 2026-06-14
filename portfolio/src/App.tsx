@@ -81,7 +81,7 @@ function AppContent() {
       <section id="Projects" className="min-h-screen text-white">
         <ProjectsSection />
       </section>
-      <section id="About" className="h-screen text-white">
+      <section id="About" className="min-h-screen text-white">
         <AboutMeSection />
       </section>
       <section id="Experience" className="min-h-screen text-white">

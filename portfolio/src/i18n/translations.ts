@@ -10,7 +10,7 @@ export const t = {
     },
     about: {
       label: "About Me",
-      bio: "I’m a computer engineering student at ENSI with a strong passion for AI, full-stack development, and building smart, impactful digital solutions. I enjoy turning ideas into real, usable products that solve actual problems and improve everyday experiences. Always curious and growth-driven, I’m constantly exploring new technologies, collaborating on projects, and pushing my skills beyond the classroom.",
+      bio: "I am a Computer Engineering student at ENSI with a strong interest in Artificial Intelligence, full-stack development, Cloud Computing, and DevOps. I am passionate about turning ideas into impactful digital solutions that solve real-world problems. Curious and committed to continuous growth, I constantly explore new technologies, from intelligent systems to modern cloud architectures, and collaborate on innovative projects that allow me to expand my technical expertise and build meaningful solutions beyond the classroom.",
       techStack: "Tech Stack",
       languages: "Languages",
       arabic: "Arabic",
@@ -55,7 +55,7 @@ export const t = {
     },
     about: {
       label: "À Propos",
-      bio: "Je suis étudiant en génie informatique à l’ENSI, passionné par l’intelligence artificielle, le développement full-stack et la création de solutions digitales innovantes à fort impact. J’aime transformer des idées en produits concrets qui répondent à de vrais besoins et améliorent le quotidien. Curieux et motivé par l’apprentissage continu, j’explore constamment de nouvelles technologies et je m’investis dans des projets collaboratifs pour faire évoluer mes compétences au-delà du cadre académique.",
+      bio: "Je suis étudiant en génie informatique à l’ENSI, passionné par l’intelligence artificielle, le développement full-stack, le Cloud Computing et les pratiques DevOps. J’aime transformer des idées en produits concrets qui répondent à de vrais besoins et améliorent le quotidien. Curieux et motivé par l’apprentissage continu, j’explore constamment de nouvelles technologies, de l’IA aux infrastructures cloud modernes, et je m’investis dans des projets collaboratifs pour développer des solutions innovantes tout en renforçant mes compétences techniques au-delà du cadre académique.",
       techStack: "Compétences techniques",
       languages: "Langues",
       arabic: "Arabe",

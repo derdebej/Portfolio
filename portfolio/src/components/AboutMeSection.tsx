@@ -46,8 +46,8 @@ export default function AboutMeSection() {
 
   const languages = [
     { name: tr.arabic,  level: tr.native },
-    { name: tr.french,  level: "C1" },
-    { name: tr.english, level: "B2" },
+    { name: tr.french,  level: "B2" },
+    { name: tr.english, level: "C1" },
   ];
 
   return (
